@@ -1,0 +1,69 @@
+Machine type is Z80
+
+crtcv.obj       text         8000      131	data         8850       10
+		bss          7000        9
+music.obj       text         8131       14	data         8860       43
+test.obj        text         8145       DB	data         88A3       D6
+
+dsound.lib
+
+GETPUT1.LIB
+GPCHAR.OBJ      text         8220       17
+GPPAUSE.OBJ     text         8237       2F
+GPTEXT.OBJ      text         8266       63
+GPCLS.OBJ       text         82C9       2B
+GPCENTER.OBJ    text         82F4       63
+GPPRINT.OBJ     text         8357       5B
+GP2CHOI1.OBJ    text         83B2       4D
+
+LIBC.LIB
+brelop.obj      text         83FF       14
+wrelop.obj      text         8413        F
+shll.obj        text         8422        D
+strlen.obj      text         842F        E
+csv.obj         text         843D       28
+
+LIBCV.LIB
+ASCII.OBJ       text         8465       9C	data         8979        8
+SOUND.OBJ       text         8501      2D5	bss          7009       41
+VDP.OBJ         text         87D6       37
+NMI.OBJ         text         880D       19
+DELAY.OBJ       text         8826       2A
+
+LIBF.LIB
+
+TOTAL		Name         Link     Load   Length
+		(abs)           0        0        0
+		text         8000        0      850
+		data         8850      850      131
+		bss          7000      981       4A
+
+                                  Symbol Table
+
+__Bbss                bss   0981  __Bdata               data  0850
+__Btext               text  0000  __Hbss                bss   704A
+__Hdata               data  8981  __Htext               text  8850
+__Lbss                bss   7000  __Ldata               data  8850
+__Ltext               text  8000  _center_string        text  82F4
+_choice_keypad_1      text  83B2  _cls                  text  82C9
+_delay                text  8826  _disable_nmi          text  880D
+_enable_nmi           text  8818  _fill_vram            text  87E0
+_get_vram             text  87FE  _joypad_1             bss   7005
+_joypad_2             bss   7007  _keypad_1             bss   7006
+_keypad_2             bss   7008  _main                 text  8148
+_music1               text  8131  _nmi                  text  8145
+_nmi_flag             bss   7004  _no_nmi               bss   7000
+_pause                text  8237  _print_at             text  8357
+_put_vram             text  87EF  _screen_mode_2_text   text  8266
+_sound_off            text  87CE  _sound_on             text  87AA
+_sound_out            text  8501  _spinner_1            bss   7002
+_spinner_2            bss   7003  _start_sound          text  8732
+_stop_sound           text  877B  _strlen               text  842F
+_update_sound         text  8509  _upload_ascii         text  8465
+_upload_default_ascii text  8220  _vdp_out              text  87D6
+_vdp_status           bss   7001  brelop                text  83FF
+cret                  text  8449  csv                   text  843D
+indir                 text  8450  ncsv                  text  8451
+shal                  text  8422  shll                  text  8422
+start                 text  8000  wrelop                text  8413
+

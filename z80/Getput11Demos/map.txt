@@ -1,0 +1,92 @@
+Machine type is Z80
+
+crtcv.obj       text         8000      131	data         8AB9       10
+		bss          7000        9
+icvgm.obj       data         8AC9      3F5
+main.obj        text         8131      37C	data         8EBE       27
+sounds.obj      data         8EE5       94
+title.obj       data         8F79      3CC
+
+dsound.lib
+
+GETPUT1.LIB
+GPASCII0.OBJ    text         84AD       16
+GPASCII1.OBJ    text         84C3       19
+GPCENTER.OBJ    text         84DC       23
+GPFILLAT.OBJ    text         84FF       16
+GPCLS.OBJ       text         8515        D
+GPCOLOR.OBJ     text         8522       29
+GPNAMRLE.OBJ    text         854B        F
+GPPATRLE.OBJ    text         855A        F
+GPICTURE.OBJ    text         8569       1F
+GPPAUSE.OBJ     text         8588       2D
+GPSCRMO0.OBJ    text         85B5       3B
+GPSCRMO1.OBJ    text         85F0       2F
+GPSCRMO2.OBJ    text         861F       37
+GPSPTRLE.OBJ    text         8656        F
+GPSTRLEN.OBJ    text         8665        E
+GPUPDATS.OBJ    text         8673       19
+GPCALOFF.OBJ    text         868C        B
+
+LIBC.LIB
+brelop.obj      text         8697       14
+csv.obj         text         86AB       28
+
+LIBCV.LIB
+GET_RAND.OBJ    text         86D3        B
+RLE2VRAM.OBJ    text         86DE       36
+SOUND.OBJ       text         8714      2D5	bss          7009       41
+SPRITES.OBJ     text         89E9       77	bss          704A      101
+NMI.OBJ         text         8A60       19
+SCREEN.OBJ      text         8A79       16
+DELAY.OBJ       text         8A8F       2A
+
+LIBF.LIB
+
+TOTAL		Name         Link     Load   Length
+		(abs)           0        0        0
+		text         8000        0      AB9
+		data         8AB9      AB9      88C
+		bss          7000     1345      14B
+
+                                  Symbol Table
+
+_COLOR                data  8E69  _NAMERLE              data  8AC9
+_PATTERNRLE           data  8BCD  _SPATTERNRLE          data  8E89
+_SPRITESINIT          data  8EB6  _SPRITESINITSIZE      data  8EB4
+__Bbss                bss   1345  __Bdata               data  0AB9
+__Btext               text  0000  __Hbss                bss   714B
+__Hdata               data  9345  __Htext               text  8AB9
+__Lbss                bss   7000  __Ldata               data  8AB9
+__Ltext               text  8000  _animation            text  8185
+_box                  text  8221  _center_string        text  84DC
+_clear_sprites        text  8A47  _cls                  text  8515
+_delay                text  8A8F  _disable_nmi          text  8A60
+_enable_nmi           text  8A6B  _fill_at              text  84FF
+_game                 text  82CF  _gameover             text  847E
+_get_char             text  84C3  _get_random           text  86D3
+_gob_sound            data  8EE5  _gotcha_sound         data  8EFC
+_intro                text  816E  _joypad_1             bss   7005
+_joypad_2             bss   7007  _keypad_1             bss   7006
+_keypad_2             bss   7008  _load_color           text  8522
+_load_namerle         text  854B  _load_patternrle      text  855A
+_load_spatternrle     text  8656  _main                 text  84A2
+_my_random_function   text  82A0  _nmi                  text  815F
+_nmi_flag             bss   7004  _no_nmi               bss   7000
+_pause                text  8588  _put_char             text  84AD
+_rle2vram             text  86DE  _screen_mode_2_bitmap text  85B5
+_screen_mode_2_text   text  85F0  _screen_off           text  8A79
+_screen_on            text  8A84  _shoot_sound          data  8F57
+_show_picture         text  8569  _sound_off            text  89E1
+_sound_on             text  89BD  _sound_out            text  8714
+_spinner_1            bss   7002  _spinner_2            bss   7003
+_sprites              bss   704B  _start_sound          text  8945
+_stop_sound           text  898E  _strlen               text  8665
+_title                data  8F79  _update_sound         text  871C
+_update_sprites       text  89E9  _updatesprites        text  8673
+_vdp_status           bss   7001  brelop                text  8697
+calc_offset           text  868C  cret                  text  86B7
+csv                   text  86AB  default_vdp_reg       text  861F
+indir                 text  86BE  ncsv                  text  86BF
+start                 text  8000  
+

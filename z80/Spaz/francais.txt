@@ -1,0 +1,54 @@
+Bienvenu à l'interface C.C.I.
+ 
+C.C.I. : Coleco Compiler Interface
+
+CCI est une interface Windows pour compiler des projets ColecoVision.
+
+Pour apprendre comment utiliser CCI, vous devez l'essayer en compilant un TEST.
+
+Les étapes suivantes vous aide pour compiler le fichier TEST.C
+
+- Faites double-clic sur le logiciel CCI.EXE
+- Primo, selectionnez la bonne version de Windows
+- Secondo, assurez-vous que les bonnes librairies sont sélectionnées : coleco (par défaut) et getput 1
+- Cliquez sur "COMPILE ALL" pour demander de compiler tous les fichiers C
+- Une fenêtre popup apparait en train d'exécuter l'émulateur 22NICE
+- 22NICE attend que vous ayez appuyé sur la barre d'espacement pour continuer
+- Le compilateur compile les fichiers music.c et le fichier test.c
+- Le compileur sert à créer des fichiers ".obj" : music.obj et test.obj
+- Pour créer un rom avec le fichier test.obj, cliquez "LINK"
+- Une autre fenêtre popup apparait en train d'exécuter l'émulateur 22NICE
+- 22NICE attend que vous ayez appuyé sur la barre d'espacement pour continuer
+- Vous voyez le "link>_"? L'ordinateur attend les paramètres
+- Faites clic droit sur la barre titre de la fenêtre popup
+- Choisissez l'option COLLER dans le menu popup
+- LINK crée un fichier result.rom
+- Pour tester le fichier rom, cliquez sur "RUN"
+
+Si tout s'est bien déroulé, vous devriez voir un menu puis un message de félicitations avec de la musique
+
+Maintenant, vous pouvez essayer de modifier un peu le fichier test.c
+
+- Ouvrir le fichier test.c avec un éditeur texte comme le Bloc-notes
+- Chercher la ligne : center_string(22,"************");
+- Modifier cette ligne pour que votre nom s'affiche au lieu de simples étoiles
+- Ne pas utiliser de caractères spéciaux comme des lettres accentuées pour écrire votre nom
+- Sauvegarder le fichier test.c maintenant modifié
+- Si CCI n'est pas démarré, démarrez-le et configurez-le correctement
+- Seul test.c est à re-compiler alors il est inutile de cliquer sur "COMPILE ALL"
+- Selectionnez le fichier test.c dans la liste de fichiers et cliquez "COMPILE"
+- Une fenêtre popup apparait en train d'exécuter l'émulateur 22NICE
+- 22NICE attend que vous ayez appuyé sur la barre d'espacement pour continuer
+- Le compilateur compile le fichier test.c pour créer un fichier test.obj
+- Pour créer un rom avec le fichier test.obj, cliquez "LINK"
+- Une autre fenêtre popup apparait en train d'exécuter l'émulateur 22NICE
+- 22NICE attend que vous ayez appuyé sur la barre d'espacement pour continuer
+- Vous voyez le "link>_"? L'ordinateur attend les paramètres
+- Faites clic droit sur la barre titre de la fenêtre popup
+- Choisissez l'option COLLER dans le menu popup
+- LINK crée un fichier result.rom
+- Pour tester le fichier rom, cliquez sur "RUN"
+
+Si tout s'est bien déroulé, vous devriez voir votre nom à l'écran de menu
+
+C'est tout! Bonne chance dans vos futur projets ColecoVision!

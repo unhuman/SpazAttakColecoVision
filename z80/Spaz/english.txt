@@ -1,0 +1,54 @@
+Welcome to the C.C.I. front-end
+
+C.C.I. : Coleco Compiler Interface
+
+CCI is a frontend for Windows to compile ColecoVision projects.
+
+To learn how to use CCI, you must try it by compiling a TEST file.
+
+The following steps help you to compile the TEST.C file
+
+- Double-click on the CCI.EXE software.
+- First, select the correct Windows version
+- Second, make sure the correct libraries are selected : coleco (by default) and getput 1
+- Click on "COMPILE ALL" to ask for compiling every C files of this project.
+- A popup window appear running 22NICE emulator
+- 22NICE is waiting for a space bar to run
+- The compiler compile music.c and test.c files
+- The compiler create two new files : music.obj and test.obj
+- To create a rom with music.obj and test.obj file, click on "LINK" button
+- Another popup window appear running 22NICE emulator again
+- 22NICE is waiting for a space bar to run
+- See the "link>_"? The computer is waiting for the parameters
+- Right-Click on the title bar of the popup window
+- Choose in the popup menu to PASTE
+- LINK create a result.rom file
+- To test the rom file, click on "RUN" button
+
+If all was going well, you must see a menu and a message "CONGRATULATION!" and a little music
+
+Nice! Now, why not modifying a little bit the test.c file ?
+
+- Open test.c file with a text editor like Notepad
+- Look for a line : center_string(22,"************");
+- Modify this line to replace stars by your name
+- Do not use special caracters like accents
+- Save the modifications
+- Start CCI and configure it
+- Only the test.c file was modified so you just need to re-compile this file
+- Select test.c file in the File List Box and click on "COMPILE"
+- A popup window appear running 22NICE emulator
+- 22NICE is waiting for a space bar to run
+- The compiler compile test.c file to create a test.obj file
+- To create a rom with test.obj file, click on "LINK" button
+- Another popup window appear running 22NICE emulator again
+- 22NICE is waiting for a space bar to run
+- See the "link>_"? The computer is waiting for the parameters
+- Right-Click on the title bar of the popup window
+- Choose in the popup menu to PASTE
+- LINK create a result.rom file
+- To test the rom file, click on "RUN" button
+
+If all was going well, you must see your name at the menu screen
+
+That's all! Good luck for your future ColecoVision projects!
